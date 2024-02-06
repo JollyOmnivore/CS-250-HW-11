@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+
+
+</style>
+<body>
+<script>
+ function changerasdf(item){
+    x = document.getElementById("link");
+    x.href = "/isPrime/"+item.value;
+    }
+
+</script>
+<input type="text" id="input" name="number" value="{{N}}" onchange="changerasdf(this);">
+<a href="/isPrime/{{N}}" id="link"       > IS prime??</a>
+
+</body>
+</html>
